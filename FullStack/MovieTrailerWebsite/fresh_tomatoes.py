@@ -149,8 +149,8 @@ def create_movie_tiles_content(movies):
             # use Movie API 
             movie_title=movie.get_title(),
             poster_image_url=movie.get_poster_image_url(),
-            trailer_youtube_id=trailer_youtube_id
-            storyline=movie.storyline # add a storyline
+            trailer_youtube_id=trailer_youtube_id,
+            storyline=movie.get_storyline() # add a storyline
         )
     return content
 
