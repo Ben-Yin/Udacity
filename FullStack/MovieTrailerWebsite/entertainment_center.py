@@ -1,6 +1,7 @@
 from fresh_tomatoes import open_movies_page
 from media import *
 
+# some instances of movie class
 movie_star_war = Movie(
 	"Rogue One: A Star Wars Story", 
 	"https://upload.wikimedia.org/wikipedia/en/d/d4/Rogue_One%2C_A_Star_Wars_Story_poster.png",
@@ -21,6 +22,7 @@ movie_moana = Movie(
 	"https://upload.wikimedia.org/wikipedia/zh/d/d5/Moana-poster1.jpg",
 	"https://www.youtube.com/watch?v=LKFuXETZUsI")
 
+# a list of movies
 movies = [
 	movie_star_war,
 	# movie_your_name,
@@ -28,4 +30,6 @@ movies = [
 	movie_moana,
 ]
 
+# Uses list of movie instances as input to generate an HTML file
+# and open it in the browser.
 open_movies_page(movies)

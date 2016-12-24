@@ -6,11 +6,19 @@
 # 	trailer_youtube_url
 
 class Movie:
+	"""
+	The Movie class store movie related information
+	"""
 	def __init__(self, title, poster_image_url, trailer_youtube_url):
+		"""
+		the input arguments of init is the title of movie, 
+		URL of poster image and URl of trailer video on youtube
+		"""
 		self.title = title
 		self.poster_image_url = poster_image_url
 		self.trailer_youtube_url = trailer_youtube_url
 
+	# getter and setter
 	def get_title(self):
 		return self.title
 
@@ -28,3 +36,4 @@ class Movie:
 
 	def set_trailer_youtube_url(self, trailer_youtube_url):
 		self.trailer_youtube_url = trailer_youtube_url
+
